@@ -12,13 +12,13 @@ public class Ex3
 //    }
 
     /*@ requires n >= 0;
-      @ ensures \result == (\sum int i; i >= 0 && i <= n; i * i);
+      @ ensures \result == (\sum int j; j >= 0 && j <= n; j* j);
      */
     public static int sumSquaredFrom1To(int n)
     {
         int sum = 0;
 
-        //@ maintaining sum == (\sum int i; i >= 0 && i >= n; i * i);
+        //@ maintaining sum == (\sum int j; j >= 0 && j >= n; j * j);
         //@ decreasing n - i;
         for(int i = 0; i <= n; i++)
         {
