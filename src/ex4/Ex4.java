@@ -19,6 +19,8 @@ public class Ex4
         System.out.println(Ex1.isSorted(sorted));
     }
 
+    /* @ensures \forall int i; ...
+     */
     public static int[] bubbleSort(int[] toSort)
     {
         int[] copy = Arrays.copyOf(toSort, toSort.length);
